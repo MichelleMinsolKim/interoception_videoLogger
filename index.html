@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Rating Logger</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Video Container -->
+  <div id="video-container" class="center-content">
+    <video id="dollyzoom" autoplay controls style="width: 100%; height: auto;">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Rating Panel -->
+  <div id="rating-panel">
+
+    <!-- Valence Slider -->
+    <div class="slider-container">
+      <label for="valence-slider">
+        How would you rate your current <strong>valence</strong>?<br>
+        <span style="font-size: 0.9em; color: gray;">
+          *A feeling of negativity or positivity, like anxiety or feeling thrilled
+        </span>
+      </label>
+      <input type="range" id="valence-slider" min="-2" max="2" step="0.01" value = "0"/>
+
+      <div class="slider-labels">
+        <span>Highly Negative</span>
+        <span style="text-align: center;">Neutral</span>
+        <span style="float: right;">Highly Positive</span>
+      </div>
+    </div>
+
+    <!-- Arousal Slider -->
+    <div class="slider-container">
+      <label for="arousal-slider">
+        How would you rate your current <strong>arousal</strong>?<br>
+        <span style="font-size: 0.9em; color: gray;">
+          * Level of calmness or heightened, like relaxed or on edge
+        </span>
+      </label>
+      <input type="range" id="arousal-slider" min="-2" max="2" step="0.01" value = "5"/>
+      <div class="slider-labels">
+        <span>Very Low</span>
+        <span style="text-align: center;">Neutral</span>
+        <span style="float: right;">Very High</span>
+      </div>
+    </div>
+
+    <!-- Vibration Speed Slider -->
+    <div class="slider-container">
+      <label for="vibration-speed-slider">
+        How does your heartbeat compare to the vibration rate?
+      </label>
+      <input type="range" id="vibration-speed-slider" min="-2" max="2" step="1" value="0" />
+      <div class="slider-labels">
+        <span>Much Slower</span>
+        <span style="text-align: center;">About the Same</span>
+        <span style="float: right;">Much Faster</span>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <button id="submit-emotion">Submit Rating</button>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

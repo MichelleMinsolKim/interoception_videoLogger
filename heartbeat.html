@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heartbeat Measurement</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div id="heartbeat-container">
+        <h1> Count how many times  <br> your heart beats in 30 seconds!</h1>
+        <div id="center-content">
+          <button id="start-button">Start</button>
+        </div>
+        <div id="user-input-container" style="display: none; flex-direction: column; align-items: center; margin-top: 2vh;">
+          <label for="heartbeat-input" style="color: white; font-size: 5rem;">Enter your guessed heartbeat count:</label>
+          <input type="number" id="heartbeat-input" placeholder="e.g., 75" 
+            style="padding: 0.2em; font-size: 5rem; margin-top: 1vh; width: 50%; text-align: center;" />
+          <button id="submit-heartbeat" style=" margin-top: 2vh;">Submit</button>
+        </div>
+      </div>
+           
+  <script src="js/heartbeat.js" defer></script>
+</body>
+</html>
